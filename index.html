@@ -8,27 +8,43 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <nav>
-        <h1>IPSUM</h1>
+    <div id="nav">
+        <h1 id="nav-header">IPSUM</h1>
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Sign Up</a></li>
         </ul>
-    </nav>
-    <form action="" method="post">
-        <fieldset>
-            <legend>Sign Up</legend>
-                <label for="firstname">First Name:</label>
-                <input type="text" name="First Name" class="name">
-                <label for="surname">Surname:</label>
-                <input type="text" name="surname" class="name">
-                <label for="age">Age:</label>
-                <input type="text" name="personsage" class="age">
-                <label for="email">Email:</label>
-                <input type="email" name="email_address" class="email">
-                <input type="submit">
-        </fieldset>
+</div>
+    <form action="#" method="post">
+        <div class="user-details">
+            <fieldset class="field">
+                <legend><span class="legend">Sign Up</span></legend>
+                <div class="input-box">
+                     <label for="firstname"> <span class="labels">First Name:</span></label>
+                    <input type="text" name="First Name" class="name"  placeholder="Enter First Name" required>
+                </div>
+                <div class="input-box">
+                    <label for="surname"> <span class="labels">Surname:</span></label>
+                    <input type="text" name="surname" class="name" placeholder="Enter surname"  required>
+                </div>
+                <div class="input-box">
+                    <label for="email"> <span class="labels">Email:</span></label>
+                    <input type="email" name="email_address" class="name" placeholder="Enter Email Address"  required>
+                </div>
+                <div class="input-box">
+                    <label for="password"> <span class="labels">Password:</span></label>
+                    <input type="password" name="password" class="password"  placeholder="Enter Password" required>
+                </div>
+                <div class="input-box">
+                    <label for="password"> <span class="labels">Confirm Password:</span></label>
+                    <input type="password" name="confirm password" class="password"  placeholder="Confirm Password" required>
+                </div>
+                    <div class="button">
+                        <input type="submit" value="Sign Up">
+                    </div>
+            </fieldset>
+        </div>
     </form>
 </body>
 </html>
